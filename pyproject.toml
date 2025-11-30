@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latarnia"
+version = "6.0.0"
+description = "An ethical reasoning framework for AI systems with modular components for core logic, tools, security, runtime, turbo, RAG, and hive."
+readme = "README_LATARNIA_V6.txt"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "adamfanok2-crypto"}
+]
+keywords = ["ai", "ethics", "reasoning", "framework"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "streamlit>=1.20.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[project.scripts]
+latarnia = "run_latarnia:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["latarnia*"]
