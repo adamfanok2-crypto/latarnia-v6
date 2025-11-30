@@ -1,0 +1,28 @@
+# Environment and secrets
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Egg-info and build artifacts
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Latarnia sandbox
+LatarniaSandbox/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
